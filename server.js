@@ -1,3 +1,4 @@
+require('dotenv').config()
 const ccxt = require('ccxt')
 const MongoHelper = require('./config/database')
 
@@ -63,6 +64,8 @@ function sleep(ms) {
       console.log('Active trades', activeTrades)
       const resPrice = await getPrice()
       console.log (pair + ' price', resPrice)
+      /*
+
 
       // Paso 1: Creo la orden de compra
       if (activeTrades.length === 0 || activeTrades[activeTrades.length - 1]?.completed) {
@@ -95,6 +98,8 @@ function sleep(ms) {
         console.log('waiting to sale')
       }
 
+
+      */
       // const amountToBuy = 10
       // const buy = await buyOrder(amount, price.bid)
       console.log('encontrado')

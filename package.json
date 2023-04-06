@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "ccxt": "^1.85.95",
+    "ccxt": "^3.0.55",
+    "dotenv": "^16.0.3",
     "mongodb": "^4.7.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
