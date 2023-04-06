@@ -5,8 +5,8 @@ const MongoHelper = require('./config/database')
 const pair = 'BTC/USDT'
 
 const exchange = new ccxt.binance({
-  'apiKey': '',
-  'secret': '',
+  'apiKey': process.env.API_KEY,
+  'secret': process.env.API_SECRET,
 })
 
 async function getPrice() {
